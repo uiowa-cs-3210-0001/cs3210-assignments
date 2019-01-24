@@ -1,0 +1,6 @@
+.DS_Store
+.vscode
+bin/
+Makefile
+build_x64.bat
+build_x86.bat
