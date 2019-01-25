@@ -11,7 +11,7 @@ TEST_CASE( "Point basics", "[Point]" )
 
     Point p2(1, -1);
     REQUIRE(p2.x == 1);
-    REQUIRE(p1.y == -1);
+    REQUIRE(p2.y == -1);
 
     REQUIRE(p1 + p2 == p2);
     REQUIRE(p2 - p1 == p2);
