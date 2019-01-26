@@ -15,7 +15,7 @@ int main()
 }
 ```
 
-For more details, see the excellent [Operator Overloading FAQ](https://isocpp.org/wiki/faq/operator-overloading) at [isocpp.org](https://isocpp.org) and [operator overloading overview](https://en.cppreference.com/w/cpp/language/operators) at [cppreference.com](https://en.cppreference.com).
+For more details, see [this operator overloading guide](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.cbclx01/cplr318.htm) from IBM, the excellent [Operator Overloading FAQ](https://isocpp.org/wiki/faq/operator-overloading) at [isocpp.org](https://isocpp.org), and [operator overloading reference](https://en.cppreference.com/w/cpp/language/operators) at [cppreference.com](https://en.cppreference.com).
 
 ## Problem statement
 
