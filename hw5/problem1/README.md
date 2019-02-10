@@ -41,7 +41,7 @@ int main()
 }
 ```
 
-See [this Stack Overlfow answer](https://stackoverflow.com/questions/20594520/what-exactly-does-stringstream-do/20595061#20595061) for a further explanation of  `stringstream` utility.
+See [this Stack Overlfow answer](https://stackoverflow.com/questions/20594520/what-exactly-does-stringstream-do/20595061#20595061) for further explanation of  `stringstream` utility.
 
 
 ## Problem statement
