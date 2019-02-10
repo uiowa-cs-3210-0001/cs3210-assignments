@@ -10,11 +10,11 @@ One of the nice things about input/output in C++ is that reading from or writing
 int main()
 {
     std::ofstream out( "hello.txt" );
-    out << "Hello, world!" << std::endl;
+    out << "Hello, world!" << std::endl; // save greeting to "hello.txt" file 
 }
 ```
 
-In fact, the standard output stream (`std::cout`) and a output file stream like `out` in the above example are both derived from the same interface, `std::ostream`. Similarly, the standard input stream (`std::cin`) and an input file stream are both derived from `std::istream`, so you can write a single function that will write to console or file depending on what stream you pass in:
+In fact, the standard output stream (`std::cout`) and an output file stream like `out` in the above example are both derived from the same interface, `std::ostream`. Similarly, the standard input stream (`std::cin`) and an input file stream are both derived from `std::istream`, so you can write a single function that will write to console or file depending on what stream you pass in:
 
 ```C++
 void hello( std::ostream& out )
