@@ -10,7 +10,7 @@ char const str2[] = { 'H', 'i', ' ', 't', 'h', 'e', 'r', 'e', '\0' }; // same as
 char const str3[] = { 'H', 'i', ' ', 't', 'h', 'e', 'r', 'e', 0 }; // ditto
 ```
 
-This format of string representation is called [_null-terminated_ strings](https://en.wikipedia.org/wiki/Null-terminated_string) or _C-style strings_. The length of a null-terminated string is found by searching for the (first) null character. This can be slow, as it takes linear time (_O(n)_) with respect to the string length. It also means that a null character cannot be a part of the string, as it's the first null that's the one that marks the end:
+This format of string representation is called [_null-terminated_ strings](https://en.wikipedia.org/wiki/Null-terminated_string) or _C-style strings_. The length of a null-terminated string is found by searching for the (first) null character. This can be slow, as it takes linear time (_O(n)_) with respect to the string length. It also means that a null character cannot be a part of the string, as it's the very first null that marks the end:
 
 ```C++
 char const* str = "Hi\0 there";
