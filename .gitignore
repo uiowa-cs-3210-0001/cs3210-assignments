@@ -1,5 +1,7 @@
 .DS_Store
 .vscode
+*.out
+*.exe
 bin/
 Makefile
 build_x64.bat
