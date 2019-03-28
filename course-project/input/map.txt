@@ -1,0 +1,13 @@
+~~~                            ###          aaaaa
+~~   D             B   B      ###       C     aaa
+~~          aa aaa   B      ###      aa         a
+~~~          aaa aaa       ###   D   aaa         
+~~~~~~        aaa aaa     ###                A   
+~~~~~~~~         aaa      ###          ~~   A    
+~~~~~~~~~        A        ###        ~~~~~~      
+~~~~~~~~~       A          ###       ~~~~~~~     
+~~~~~~~~         B   C                 ~~~~~~    
+~~~~~~~                  bbbb        bb ~~~~~~   
+~~~~~   C      aaaa      bb  bb       bb   ~~~   
+~~~~  C       aaa aa               D   b    ~    
+~~~          aaa aaa      bbbbbb      bb      C   
