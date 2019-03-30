@@ -29,7 +29,7 @@ To help facilitate a healthy development pace, you are required to submit (on Sl
  - What are you currently working on?
  - Are there any unsolved issues/errors you’re currently trying to debug?
 
-**The weekly updates are due at midnight every Wednesday, starting from Wednesday, March 3rd, up to and including Wednesday, April 24th**.
+**The weekly updates are due at midnight every Wednesday, starting from Wednesday, April 3rd, up to and including Wednesday, April 24th**.
 
 If you have any questions or concerns, please reach out as soon as you develop them. Regular demos/office hours visits to discuss your progress are essential for avoiding surprises with your final project grade.
 
