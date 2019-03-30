@@ -56,11 +56,14 @@ An ecosystem is defined by two inputs:
 
 The ecosystem map and the list of species are loaded from the corresponding files provided to the program as command line arguments. 
 
-Runing the simulator starts a new simulation session. Within a single simulation session, the user can select to run a single iteration, or a "batch" of several iterations at once (e.g. 10 or 100 iterations). After each run, the simulator prints the session's current ecosystem state to the console. The user can then chose to continue the simulation session (by doing another run), save the current ecosystem state to a file, or exit.
+Runing the simulator starts a new simulation session. Within a single simulation session, the user can select to run a single iteration, or a "batch" of several iterations at once (e.g. 10 or 100 iterations). After each run, the simulator prints the session's current ecosystem state to the console. The user can then choose to continue the simulation session (by doing another run), save the current ecosystem state to a file, or exit. If a user who ran at least one iteration chooses to exit, they are asked whether they want to save the current ecosystem state to a file before exiting.
+
+Saving the current ecosystem state to a file simply means saving the current state of the map to a file. This means that things like the animals' current energy levels and the plants' regrowth states will be reset to their initial values when the user saves and then "restores" the state by using the saved map to start a new simulation (but see [this stretch goal](#savingrestoring-the-full-state-of-the-ecosystem)).
+
 
 ### Ecosystem rules
 
-1. During each iteration every organism in the ecosystem gets a chance to perform its living functions (move, grow, consume). Plants get their turn first, then the herbivores, then the omnivores, then the cycle repeats at the next iteration.
+1. During each iteration every organism in the ecosystem gets a chance to perform its living functions (move, grow, consume). Plants get their turn first, then the herbivores, then the omnivores, then the cycle repeats at the next iteration. 
 2. Animals move freely around the ecosystem to find food, but they cannot move over the geographic obstacles, plants or other animals (unless they are consuming them). All animals move with the same speed (one block per iteration).
 3. Plants remain static and don't spread into new areas.
 4. Each living organism has an associated number of "energy points" it gives to the organism that consumes it.
@@ -81,3 +84,38 @@ Add an option to programmatically generate a map of a certain size based on the 
 ### Population statistics
 
 Collect the population statistics (number of live organisms for each species) on each iteration, allow user to save the accumulated session stats as a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values) that can be graphed by 3rd party software (e.g. Excel).
+
+### Saving/restoring the full state of the ecosystem
+
+Add an ability to save the full ecosystem state, including current energy levels, regrowth states, etc., to a separate file (complimentary to the map/list of species), and an ability to load the saved state into a new simulation session if it's been provided as one of the command line arguments.
+
+
+## Frequently Asked Questions
+
+### When an animal with 10 energy points is “eaten” by an animal that is at 26 out of 30 max points so it only takes 4 energy points, is the first animal still alive with 6 points or is it dead?
+
+It's dead.
+
+### Does an offspring starts its live with a max energy level?
+
+Yes, but if you do want to introduce a coefficient for this to see how it affects the simulation, please go ahead; I'll take enhancements along these lines into consideration when grading. 
+
+### Does producing an offspring cost any energy?
+
+No, but see above.
+
+### Can a species be referenced in a food chain before they've been defined?
+
+Yes, see, for example, [line 5 of species.txt](input/species.txt#L5). This enables us to specify circular food chain dependencies (species A can eat species B and species B can eat species A).
+
+### Does the order of species in the food chain matter? 
+
+No.
+
+### What's included in the current ecosystem state when it's printed to console?
+
+The map is the only absolute requirement, but feel free to print out anything else that you find useful/interesting. You can also print the map by default, and add an explicit command to print the extended state.
+
+### How do the animals choose when and where to move?
+
+The specific algorithm is up to you, but there is a requirement that the animals will act in their own interest — e.g. if an animal is in danger of being eaten and can avoid it, it should try to; if the animal is running out of energy, it should seek to replenish it; etc. You can still introduce an element of randomness to this — e.g. an animal that is in danger might from time to time get “distracted” and get eaten anyway.
