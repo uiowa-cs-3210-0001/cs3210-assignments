@@ -119,4 +119,8 @@ The map is the only absolute requirement, but feel free to print out anything el
 
 ### How do the animals choose when and where to move?
 
-The specific algorithm is up to you, but see the [ecosystem rule #11](#ecosystem-rules). You can still introduce an element of randomness to this — e.g. an animal that is in danger might from time to time get “distracted” and get eaten anyway.
+The specific algorithm is up to you, but see [ecosystem rule #11](#ecosystem-rules). You can still introduce an element of randomness to this — e.g. an animal that is in danger might from time to time get “distracted” and get eaten anyway.
+
+### Do I need to test my simulation with any other data other than what's provided in the [`input`](input/) directory?
+
+Yes, it's both [required](#grading--progress-tracking) and highly recommended to use a variety of inputs (correct and incorrect) to fully explore the system's behavior as it's being developed. You are also welcome to include interesting cases of highly stable or otherwise unsual ecosystems as a part of your project submission.
