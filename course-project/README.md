@@ -35,7 +35,7 @@ If you have any questions or concerns, please reach out as soon as you develop t
 
 ### Progress tracking through Github
 
-Due to the long-running nature of this project, **we'll be using Github to host the project's code and track your development progress**. If you don't have a Github account, please create one using your @uiowa.edu email address. If you have an existing Github account you'd like to use, please make sure your @uiowa.edu email is listed as your [public email](https://github.com/settings/profile). 
+Due to the long-running nature of this project, **we'll be using Github ([https://github.com](https://github.com)) to host the project's code and track your development progress**. If you don't have a Github account, please create one using your @uiowa.edu email address. If you have an existing Github account you'd like to use, please make sure your @uiowa.edu email is listed as your [public email](https://github.com/settings/profile). 
 
 Once you are logged in to Github, follow [these instructions](https://help.github.com/en/articles/create-a-repo) to **create a private repository for your project**, then invite **@agurtovoy** and **@srinvsn** as [collaborators](https://help.github.com/en/articles/inviting-collaborators-to-a-personal-repository). 
 
