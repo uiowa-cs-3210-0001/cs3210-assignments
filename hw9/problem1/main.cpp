@@ -41,7 +41,7 @@ TEST_CASE("PhoneBook", "[PhoneBook]")
 
     REQUIRE( entries.size() == 6 );
 
-    auto const alphabetic = phonebook.alphabetic_order();
+    auto const& alphabetic = phonebook.alphabetic_order();
     REQUIRE( alphabetic.size() == 6 );
 
     auto iter = alphabetic.begin();
